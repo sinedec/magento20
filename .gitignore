@@ -9,11 +9,6 @@ atlassian*
 /.idea
 /.gitattributes
 
-/app/code/Magento
-/app/design/*/Magento
-/app/etc
-/app/i18n/magento
-/app/*.*
 
 /bin
 
