@@ -56,15 +56,15 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                             . 'top:' . $productImage->getHeight() . 'px;"';
                     }
                     ?>
-
+					<a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
                     <div class="product-image">
                         <?php // Product Image ?>
-                        <a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+                        
                             <?php echo $productImage->toHtml(); ?>
-                        </a>
+                        
 
                         
-                    </div>
+                    </div></a>
                     <div class="product details product-item-details">
                         <?php /* @escapeNotVerified */ echo $block->getProductPrice($_product) ?>
                         
